@@ -8,7 +8,7 @@ Built with HTML, CSS, and JavaScript, it offers a playful experience with dynami
 
 
 ## Getting Started
-- **Deployed Link** - CLICK HERE 😺 <a href="https://your-deployed-link.com"> Love You Project </a>
+- **Deployed Link** - CLICK HERE 😺 <a href="https://megatron-xcoder.github.io/Love-You-Project/"> Love You Project </a>
 
 ## Features
 
