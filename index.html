@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <style>
+        .btn {
+            position: relative;
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div >
+        <h2 class="header_text">HEY Baby Demon...<br>&#129402; Will You be my RAVEN? &#128547;</h2>
+    </div>
+    <div class="gif_container">
+        <img
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+                class="gif" alt="Cute animated illustration">
+    </div>
+    <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+    </div>
+</div>
+
+<script>
+    function nextPage() {
+        window.location.href = "yes.html";
+    }
+
+    function moveButton() {
+        var noButton = document.getElementById('noButton');
+        var yesButton = document.getElementById('yesButton');
+
+        // Move the "No" button to a random position
+        var x = Math.random() * (window.innerWidth - noButton.offsetWidth) - 85;
+        var y = Math.random() * (window.innerHeight - noButton.offsetHeight) - 48;
+        noButton.style.left = `${x}px`;
+        noButton.style.top = `${y}px`;
+
+        // Increase the size of the "Yes" button by 20%
+        var currentScale = yesButton.style.transform.match(/scale\(([^)]+)\)/);
+        var newScale = currentScale ? parseFloat(currentScale[1]) * 1.1 : 1.1;
+        yesButton.style.transform = `scale(${newScale})`;
+    }
+</script>
+</body>
+</html>
