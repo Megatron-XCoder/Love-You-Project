@@ -8,7 +8,7 @@ Built with HTML, CSS, and JavaScript, it offers a playful experience with dynami
 
 
 ## Getting Started
-- **Deployed Link** - CLICK HERE 😺 <a href="https://baby-love-you.netlify.app/"> Love You Project </a>
+- **Deployed Link** - CLICK HERE 😺 <a href="https://baby-love-you.netlify.app/"> Love You Project </a> <br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d7c456b1-6bca-47bf-9e61-eae4b6f9bfd8/deploy-status)](https://app.netlify.com/sites/baby-love-you/deploys)
 
 ## Features
